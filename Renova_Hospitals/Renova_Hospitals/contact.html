@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us - Renova Hospitals</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <!-- Logo -->
+            <a href="index.html" class="brand">
+                <img src="assets/images/renova-logo.jpg">
+            </a>
+
+            <!-- Mobile Menu -->
+            <button class="menu-toggle" type="button"
+                    aria-controls="site-nav"
+                    aria-expanded="false"
+                    aria-label="Open navigation">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+            <!-- Navigation -->
+            <nav class="site-nav" id="site-nav">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="breast-health.html">Breast Health</a>
+                <a href="symptoms.html">Symptoms</a>
+                <a href="treatment.html">Treatment</a>
+                <a href="contact.html" class="active">Contact Us</a>
+
+            </nav>
+
+            <!-- Appointment Button -->
+            <div class="header-contact">
+
+                <a href="contact.html#appointment" class="btn">
+                    Book an Appointment <span>&rarr;</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- Contact Us Banner -->
+        <section class="hero contact-hero">
+
+            <div class="container hero-grid">
+
+                <div class="hero-copy">
+
+                    <span class="eyebrow">
+                        CONTACT US
+                    </span>
+
+                    <h1>
+                        We Are Here<br>
+                        <em>for Your Health.</em>
+                    </h1>
+
+                    <p>
+                        Have questions or want to request an appointment?
+                        Reach our team using the contact details below.
+                    </p>
+
+                    <div class="actions">
+
+                        <a href="contact.html#appointment" class="btn">
+                            Book an Appointment <span>&rarr;</span>
+                        </a>
+
+                        <a href="contact.html#appointment" class="btn btn-outline">
+                            Talk to Our Team <span>&rarr;</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-visual">
+                    <img src="assets/images/contact-banner.jpg">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Information -->
+        <section class="section section-tight">
+
+            <div class="container contact-details">
+
+                <!-- Phone Number -->
+                <article>
+
+                    <span class="detail-icon">&phone;</span>
+
+                    <h3>Call Us</h3>
+
+                    <a href="tel:+919491648937">
+                        +91 94916 48937
+                    </a>
+
+                </article>
+
+
+                <!-- Email Address -->
+                <article>
+
+                    <span class="detail-icon">&#9993;</span>
+
+                    <h3>Email Us</h3>
+
+                    <a href="mailto:canceratrenova@gmail.com">
+                        canceratrenova@gmail.com
+                    </a>
+
+                </article>
+
+
+                <!-- Hospital Location -->
+                <article>
+
+                    <span class="detail-icon">&target;</span>
+
+                    <h3>Our Location</h3>
+
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=11.662500,78.121639"
+                       target="_blank">
+                        11°39'45.0"N, 78°07'17.9"E
+                    </a>
+
+                    <p>Salem, Tamil Nadu</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Appointment Enquiry and Google Maps -->
+        <section class="section section-tight">
+
+            <div class="container contact-layout">
+
+                <!-- Appointment Enquiry Form -->
+                <div class="form-panel" id="appointment">
+
+                    <div class="section-heading">
+
+                        <span class="eyebrow">
+                            APPOINTMENT ENQUIRY
+                        </span>
+
+                        <h2>
+                            Send Us an
+                            <em>Appointment Enquiry</em>
+                        </h2>
+
+                        <p>
+                            Complete the form to prepare an email enquiry.
+                            Your email application will open so you can
+                            review and send it.
+                        </p>
+
+                    </div>
+
+
+                    <form id="enquiry-form" novalidate>
+
+                        <!-- Full Name -->
+                        <label for="full-name">
+                            Full Name <span>*</span>
+                        </label>
+
+                        <input type="text"
+                               id="full-name"
+                               name="name"
+                               placeholder="Enter your full name"
+                               autocomplete="name"
+                               minlength="2"
+                               required>
+
+
+                        <!-- Phone Number -->
+                        <label for="phone">
+                            Phone Number <span>*</span>
+                        </label>
+
+                        <input type="tel"
+                               id="phone"
+                               name="phone"
+                               placeholder="Enter your phone number"
+                               autocomplete="tel"
+                               required>
+
+
+                        <!-- Email Address -->
+                        <label for="email">
+                            Email Address <span>*</span>
+                        </label>
+
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="Enter your email address"
+                               autocomplete="email"
+                               required>
+
+
+                        <!-- Purpose -->
+                        <label for="purpose">
+                            Purpose <span>*</span>
+                        </label>
+
+                        <select id="purpose" name="purpose" required>
+
+                            <option value="">
+                                Select a purpose
+                            </option>
+
+                            <option>General consultation</option>
+                            <option>Breast health enquiry</option>
+                            <option>Screening information</option>
+                            <option>Treatment information</option>
+                            <option>Other enquiry</option>
+
+                        </select>
+
+
+                        <!-- Additional Message -->
+                        <label for="message">
+                            Additional Message (Optional)
+                        </label>
+
+                        <textarea id="message"
+                                  name="message"
+                                  rows="5"
+                                  placeholder="Write your message here"></textarea>
+
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-block">
+                            Prepare Email Enquiry &rarr;
+                        </button>
+
+                        <p class="form-status"
+                           id="form-status"
+                           role="status"
+                           aria-live="polite"></p>
+
+                    </form>
+
+                </div>
+
+
+                <!-- Google Maps -->
+                <aside class="map-panel">
+
+                    <span class="eyebrow">
+                        OUR LOCATION
+                    </span>
+
+                    <h2>Find Us Here</h2>
+
+                    <p>
+                        Use the map to view the location
+                        and get directions.
+                    </p>
+
+
+                    <!-- Embedded Google Map -->
+                    <iframe
+                        src="https://maps.google.com/maps?q=11.662500%2C78.121639&amp;z=15&amp;output=embed"
+                        title="Renova Hospitals location on Google Maps"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+
+
+                    <!-- Map Address and Directions -->
+                    <div class="map-bottom">
+
+                        <div>
+
+                            <strong>Renova Hospitals</strong>
+
+                            <small>
+                                11°39'45.0"N, 78°07'17.9"E
+                                <br>
+                                Salem, Tamil Nadu
+                            </small>
+
+                        </div>
+
+                        <a href="https://www.google.com/maps/search/?api=1&amp;query=11.662500,78.121639"
+                           target="_blank"
+                           class="btn btn-outline">
+                            Open in Google Maps &nearrow;
+                        </a>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <!-- Hospital Information -->
+            <div>
+
+                <img src="assets/images/renova-logo.jpg">
+
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <div class="footer-links">
+
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="breast-health.html">Breast Health</a>
+                    <a href="symptoms.html">Symptoms</a>
+                    <a href="treatment.html">Treatment</a>
+                    <a href="contact.html">Contact Us</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Details -->
+            <div>
+
+                <h3>Contact Us</h3>
+
+                <a href="tel:+919491648937">
+                    +91 94916 48937
+                </a>
+
+                <a href="mailto:canceratrenova@gmail.com">
+                    canceratrenova@gmail.com
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=11.662500,78.121639"
+                   target="_blank">
+                    View Location  &nearrow;
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="container footer-bottom">
+
+            <span>
+                &copy; 2026 Renova Hospitals.
+            </span>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
